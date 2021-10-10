@@ -1,5 +1,5 @@
 # 系统支持 Debian 9+/Ubuntu 18.04+/Centos 7+
-sockes5 一键搭建脚本
+sockes5 一键搭建脚本 
 使用方法  2选1
 
 wget -N --no-check-certificate https://www.zhangyu.ml/work/ss5.sh && bash ss5.sh
