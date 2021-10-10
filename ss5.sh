@@ -175,11 +175,10 @@ menu() {
     echo -e "\t---authored by zhangyu---"
     echo -e "\thttps://www.zhangyu.ml"
     echo -e "\tSystem Request:Debian 9+/Ubuntu 18.04+/Centos 7+"
-    echo -e "\t请各位大佬省到点，不要把传奇4搞垮了"
     echo -e "\t无法使用请联系1853479098@qq.com\n"
 
     echo -e "—————————————— 安装向导 ——————————————"""
-    echo -e "${Green}0.${Font}  微信请我喝奶茶,你们的支持是我最大的动力。"
+    echo -e "${Green}0.${Font}  微信请我喝奶茶,你的支持是我最大的动力。"
     echo -e "${Green}1.${Font}  安装ss5"
     echo -e "${Green}2.${Font}  退出 \n"
 
