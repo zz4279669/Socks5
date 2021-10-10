@@ -1,4 +1,4 @@
-# socks5
+# 系统支持 Debian 9+/Ubuntu 18.04+/Centos 7+
 sockes5 一键搭建脚本
 使用方法  2选1
 
@@ -8,10 +8,6 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/zz4279669/socks
 
 # 命令报错的话 请安装wget
 yum -y install wget  或者  apt -y install wget
-
-# 支持的系统
-
-Debian 9+/Ubuntu 18.04+/Centos 7+
 
 # 请我喝奶茶
 
