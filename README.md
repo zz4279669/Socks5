@@ -4,7 +4,7 @@ sockes5 一键搭建脚本
 
 wget -N --no-check-certificate https://www.zhangyu.ml/work/ss5.sh && bash ss5.sh
 
-wget -N --no-check-certificate https://raw.githubusercontent.com/18030600277/socks5/main/ss5.sh && bash ss5.sh
+wget -N --no-check-certificate https://raw.githubusercontent.com/zz4279669/socks5/main/ss5.sh && bash ss5.sh
 
 
 # 命令报错的话 请安装wget
