@@ -155,6 +155,10 @@ connect() {
 	echo "$IP $port $user $passwd " >/root/ss5.txt
 }
 
+install_ss() {
+    bash <(curl -sL https://s.hijk.art/ss.sh)
+}
+
 weixin() {
 	echo -n "wxp://f2f0NRmeKua57Dzo__42775iua3LnpH6286yZ-BJ6mBB1R8" | qrencode -o - -t utf8
 }
@@ -181,8 +185,8 @@ menu() {
     echo -e "—————————————— 安装向导 ——————————————"""
     echo -e "${Green}0.${Font}  微信请我喝奶茶,你的支持是我最大的动力。"
     echo -e "${Green}1.${Font}  安装ss5"
-    echo -e "${Green}2.${Font}  退出 \n"
-
+    echo -e "${Green}2.${Font}  安装Shadowsocks"
+    echo -e "${Green}99.${Font}  退出 \n"
 
 
 
@@ -192,6 +196,9 @@ menu() {
         install
         ;;
     2)
+        install_ss
+        ;;
+    99)
         exit 0
         ;;
     0)
