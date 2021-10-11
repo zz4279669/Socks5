@@ -193,7 +193,7 @@ menu() {
     echo -e "${Green}99.${Font}  退出 \n"
  
     echo -e "微信请我喝奶茶,你的支持是我最大的动力。"
-       \tweixin
+       \t	weixin
 
 
     read -rp "请输入数字：" menu_num
