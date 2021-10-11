@@ -29,14 +29,6 @@ check_system() {
     if [[ "${ID}" == "centos" && ${VERSION_ID} -ge 7 ]]; then
         echo -e "${OK} ${GreenBG} 当前系统为 Centos ${VERSION_ID} ${VERSION} ${Font}"
         INS="yum"
-	mkdir /etc/yum.repos.d/backup -p
-	mv /etc/yum.repos.d/*.repo /etc/yum.repos.d/backup
-        if [[ ${VERSION_ID} == 7 ]]; then
-                wget -O /etc/yum.repos.d/CentOS-Base.repo https://mirrors.aliyun.com/repo/Centos-7.repo
-        else
-                wget -O /etc/yum.repos.d/CentOS-Base.repo https://mirrors.aliyun.com/repo/Centos-8.repo
-        fi
-	yum clean all && yum makecache
 	$INS install qrencode -y
     elif [[ "${ID}" == "debian" && ${VERSION_ID} -ge 8 ]]; then
         echo -e "${OK} ${GreenBG} 当前系统为 Debian ${VERSION_ID} ${VERSION} ${Font}"
