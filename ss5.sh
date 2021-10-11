@@ -122,6 +122,10 @@ user_set() {
 	[[ -z ${passwd} ]] && passwd="admin"
 }
 
+bbr_boost_sh() {
+    [ -f "tcp.sh" ] && rm -rf ./tcp.sh
+    wget -N --no-check-certificate "https://raw.githubusercontent.com/ylx2016/Linux-NetSpeed/master/tcp.sh" && chmod +x tcp.sh && ./tcp.sh
+}
 
 install_ss5() {
 
@@ -186,6 +190,7 @@ menu() {
     echo -e "${Green}0.${Font}  微信请我喝奶茶,你的支持是我最大的动力。"
     echo -e "${Green}1.${Font}  安装ss5"
     echo -e "${Green}2.${Font}  安装Shadowsocks"
+    echo -e "${Green}3.${Font}  安装 4合1 bbr 锐速安装脚本"
     echo -e "${Green}99.${Font}  退出 \n"
 
 
@@ -197,6 +202,9 @@ menu() {
         ;;
     2)
         install_ss
+        ;;
+    3)
+        bbr_boost_sh
         ;;
     99)
         exit 0
