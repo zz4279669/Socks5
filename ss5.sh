@@ -116,7 +116,7 @@ port_exist_check() {
     fi
 }
 user_set() {
-	read -rp "请设置ss5连接账户。默认:admin）:" user
+	read -rp "请设置ss5连接账户。默认:admin.填写错误了可以Ctrl+C关闭，重新执行）:" user
 	[[ -z ${user} ]] && user="admin"
 	read -rp "请设置ss5连接密码。默认:admin）:" passwd
 	[[ -z ${passwd} ]] && passwd="admin"
