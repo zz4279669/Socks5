@@ -11,7 +11,7 @@ yum -y install wget  或者  apt -y install wget
 
 # 请我喝奶茶
 
-![](https://raw.githubusercontent.com/zz4279669/socks5/main/WechatIMG144.png)
+![](https://github.com/zz4279669/Socks5/blob/main/WechatIMG144.png)
 
 
 
