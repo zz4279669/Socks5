@@ -150,6 +150,11 @@ install_ss5() {
 
 }
 
+stop_ss5(){
+        docker container stop $(docker container ls -qa)
+        docker container rm $(docker container ls -qa)
+}
+
 connect() {
 	IP=$(curl https://api-ipv4.ip.sb/ip)
 	echo "IP: $IP"
@@ -188,8 +193,9 @@ menu() {
 
     echo -e "—————————————— 安装向导 ——————————————"""
     echo -e "${Green}1.${Font}  安装ss5"
-    echo -e "${Green}2.${Font}  安装Shadowsocks"
-    echo -e "${Green}3.${Font}  安装 4合1 bbr 锐速安装脚本"
+     echo -e "${Green}2.${Font}  停止ss5"
+    echo -e "${Green}3.${Font}  安装Shadowsocks"
+    echo -e "${Green}9.${Font}  安装 4合1 bbr 锐速安装脚本"
     echo -e "${Green}99.${Font}  退出 \n"
  
     echo -e "微信请我喝奶茶,你的支持是我最大的动力。"
@@ -202,9 +208,12 @@ menu() {
         install
         ;;
     2)
-        install_ss
+        stop_ss5
         ;;
     3)
+        install_ss
+        ;;
+    9)
         bbr_boost_sh
         ;;
     99)
