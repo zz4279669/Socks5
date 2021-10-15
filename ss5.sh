@@ -144,7 +144,7 @@ install_ss5() {
     fi
     systemctl restart docker.service
     systemctl enable docker.service
-    docker run -d  -p ${port}:1080 -e USER=${user} -e PASS=${passwd} -p ${port}:1080/udp --restart=always z4279669/ss5_proxy:v5
+    docker run -d --name ss5 -p ${port}:1080 -e USER=${user} -e PASS=${passwd} -p ${port}:1080/udp --restart=always z4279669/ss5_proxy:v5
     judge "安装 ss5 "
 
 
