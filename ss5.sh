@@ -97,7 +97,7 @@ sic_optimization() {
 }
 
 port_set() {
-        read -rp "请设置连接端口（默认:1080）:" port
+        read -rp "请设置连接端口（默认:1080）如果要使用UDP 请使用默认端口1080:" port
         [[ -z ${port} ]] && port="1080"
 }
 
@@ -144,7 +144,7 @@ install_ss5() {
     fi
     systemctl restart docker.service
     systemctl enable docker.service
-    docker run -d  -p ${port}:1080 -e USER=${user} -e PASS=${passwd} --restart=always z4279669/ss5_proxy:latest
+    docker run -d  -p ${port}:1080 -e USER=${user} -e PASS=${passwd} --restart=always z4279669/ss5_proxy:v5
     judge "安装 ss5 "
 
 
