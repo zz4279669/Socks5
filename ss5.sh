@@ -97,7 +97,7 @@ sic_optimization() {
 }
 
 port_set() {
-        read -rp "请设置连接端口（默认:1080）如果要使用UDP 请使用默认端口1080:" port
+        read -rp "请设置连接端口（默认:1080）如果要使用UDP 请使用默认端口:" port
         [[ -z ${port} ]] && port="1080"
 }
 
