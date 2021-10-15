@@ -194,7 +194,7 @@ menu() {
 
     echo -e "—————————————— 安装向导 ——————————————"""
     echo -e "${Green}1.${Font}  安装ss5"
-     echo -e "${Green}2.${Font}  停止ss5(停止要卡住30秒，请等待)"
+    echo -e "${Green}2.${Font}  停止ss5(停止要卡住30秒，请等待)"
     echo -e "${Green}3.${Font}  安装Shadowsocks"
     echo -e "${Green}9.${Font}  安装 4合1 bbr 锐速安装脚本"
     echo -e "${Green}99.${Font}  退出 \n"
