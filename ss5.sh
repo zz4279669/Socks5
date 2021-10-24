@@ -131,11 +131,11 @@ install_ss5() {
 
     if [[ "${ID}" == "centos" ]]; then
         ${INS} install yum-utils device-mapper-persistent-data lvm2 -y
-	yum-config-manager --add-repo https://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo
-	sed -i 's+download.docker.com+mirrors.aliyun.com/docker-ce+' /etc/yum.repos.d/docker-ce.repo
+	wget -O /etc/yum.repos.d/docker-ce.repo https://download.docker.com/linux/centos/docker-ce.repo
+	sed -i 's+download.docker.com+mirrors.tuna.tsinghua.edu.cn/docker-ce+' /etc/yum.repos.d/docker-ce.repo
         ${INS} update -y
-	${INS} makecache fast
-	${INS} install docker-ce  -y
+	${INS} makecache fast  && ${INS} install docker-ce
+	
     else
         ${INS} install apt-transport-https ca-certificates curl software-properties-common -y
 	curl -fsSL https://mirrors.aliyun.com/docker-ce/linux/ubuntu/gpg | sudo apt-key add -
