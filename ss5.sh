@@ -8,7 +8,7 @@ cd "$(
 )" || exit
 
 #====================================================
-#	System Request:Debian 9+/Ubuntu 18.04+/Centos 7+
+#	System Request:Ubuntu 20.04+/Centos 7+
 #	Author:	zhangyu
 #	Dscription: ss5 install
 #	email:1853479098@qq.com
