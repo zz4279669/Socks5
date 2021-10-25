@@ -133,7 +133,7 @@ install_ss5() {
         ${INS} install yum-utils device-mapper-persistent-data lvm2 -y
 	wget -O /etc/yum.repos.d/docker-ce.repo https://download.docker.com/linux/centos/docker-ce.repo
 	sed -i 's+download.docker.com+mirrors.tuna.tsinghua.edu.cn/docker-ce+' /etc/yum.repos.d/docker-ce.repo
-	${INS} makecache fast  && ${INS} install docker-ce
+	${INS} makecache fast  && ${INS} install docker-ce -y
 	
     else
 	${INS} install apt-transport-https ca-certificates curl gnupg2 software-properties-common -y
