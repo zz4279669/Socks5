@@ -189,7 +189,7 @@ menu() {
     echo -e "\t ss5 安装管理脚本 "
     echo -e "\t---authored by zhangyu---"
     echo -e "\thttps://www.zhangyu.ml"
-    echo -e "\tSystem Request:Debian 9+/Ubuntu 18.04+/Centos 7+"
+    echo -e "\tSystem Request:Debian 9+/Ubuntu 20.04+/Centos 7+"
     echo -e "\t无法使用请联系1853479098@qq.com\n"
 
     echo -e "—————————————— 安装向导 ——————————————"""
