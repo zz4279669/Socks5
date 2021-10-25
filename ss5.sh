@@ -136,10 +136,11 @@ install_ss5() {
 	${INS} makecache fast  && ${INS} install docker-ce
 	
     else
-        ${INS} install apt-transport-https ca-certificates curl software-properties-common -y
-	curl -fsSL https://mirrors.aliyun.com/docker-ce/linux/ubuntu/gpg | sudo apt-key add -
-	add-apt-repository "deb [arch=amd64] https://mirrors.aliyun.com/docker-ce/linux/ubuntu $(lsb_release -cs) stable"
-        ${INS} install docker-ce  -y
+	${INS} install apt-transport-https ca-certificates curl gnupg2 software-properties-common -y
+	curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+	add-apt-repository "deb [arch=amd64] https://mirrors.tuna.tsinghua.edu.cn/docker-ce/linux/ubuntu $(lsb_release -cs) stable"
+	
+        ${INS} update && ${INS} install docker-ce  -y
     fi
     systemctl restart docker.service
     systemctl enable docker.service
