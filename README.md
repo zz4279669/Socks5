@@ -1,3 +1,5 @@
+# 站群 多ip  ss5协议 安装 联系QQ 1853479098 
+
 # 系统支持 Debian 9+/Ubuntu 20.04+/Centos 7+
 sockes5 一键搭建脚本 
 使用方法  2选1
