@@ -193,7 +193,8 @@ menu() {
     echo -e "\t无法使用请联系1853479098@qq.com\n"
 
     echo -e "—————————————— 安装向导 ——————————————"""
-    echo -e "${Green} 搭建 ss5 站群 多IP 联系QQ1853479098${Font}"
+    echo -e "${Green} 搭建 ss5 站群 多IP多出口 联系QQ1853479098${Font}"
+    echo -e "${Red} 搭建 ss5 站群 多IP多出口 联系QQ1853479098${Font}“
     echo -e "${Green}1.${Font}  安装ss5"
     echo -e "${Green}2.${Font}  停止ss5(停止要卡住30秒，请等待)"
     echo -e "${Green}3.${Font}  安装Shadowsocks"
