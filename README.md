@@ -1,4 +1,5 @@
 # 站群多ip ss5 sk5 ss ssr协议 安装 联系QQ 1853479098 
+socks5  多ip 多出口
 
 # 系统支持 Debian 9+/Ubuntu 20.04+/Centos 7+
 sockes5 一键搭建脚本 
