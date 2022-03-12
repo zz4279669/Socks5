@@ -200,9 +200,7 @@ menu() {
     echo -e "${Green}3.${Font}  安装Shadowsocks"
     echo -e "${Green}9.${Font}  安装 4合1 bbr 锐速安装脚本"
     echo -e "${Green}99.${Font}  退出 \n"
- 
-    echo -e "微信请我喝奶茶,你的支持是我最大的动力。"
-   		weixin
+
 
 
     read -rp "请输入数字：" menu_num
