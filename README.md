@@ -12,9 +12,6 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/zz4279669/socks
 # 命令报错的话 请安装wget
 yum -y install wget  或者  apt -y install wget
 
-# 请我喝奶茶
-
-![](https://github.com/zz4279669/Socks5/blob/main/WechatIMG144.png)
 
 
 
