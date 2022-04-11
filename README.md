@@ -5,8 +5,8 @@ socks5  多ip 多出口
 sockes5 一键搭建脚本 
 使用方法  2选1
 
-wget -N --no-check-certificate https://my.sailulu.xyz/work/ss5.sh && bash ss5.sh
-
+bash <(curl -sL wget -N --no-check-certificate)
+wget -N --no-check-certificate https://my.oofeye.com/work/Socks5/ss5.sh && bash ss5.sh
 wget -N --no-check-certificate https://raw.githubusercontent.com/zz4279669/socks5/main/ss5.sh && bash ss5.sh
 
 # 命令报错的话 请安装wget
